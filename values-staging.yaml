@@ -425,7 +425,7 @@ master:
 replica:
   ## @param replica.replicaCount Number of Redis(TM) replicas to deploy
   ##
-  replicaCount: 1
+  replicaCount: 3
   ## @param replica.configuration Configuration for Redis(TM) replicas nodes
   ## ref: https://redis.io/topics/config
   ##
@@ -776,7 +776,7 @@ sentinel:
   masterSet: mymaster
   ## @param sentinel.quorum Sentinel Quorum
   ##
-  quorum: 1
+  quorum: 2
   ## Sentinel timing restrictions
   ## @param sentinel.downAfterMilliseconds Timeout for detecting a Redis(TM) node is down
   ## @param sentinel.failoverTimeout Timeout for performing a election failover
