@@ -7,6 +7,7 @@ redis 部署
 - 0 hubble 项目使用
 - 1 auxo 项目使用
 - 2 carpo 项目使用
+- 3 thallo 项目使用
 
 ## 部署 redis
 
