@@ -10,6 +10,7 @@ redis 部署
 - 3 thallo 项目使用
 - 4 ceres 项目使用
 - 5 plutus 项目使用
+- 6 odin   项目使用
 
 ## 部署 redis
 
