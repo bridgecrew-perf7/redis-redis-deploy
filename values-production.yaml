@@ -15,7 +15,7 @@ global:
   ##   - myRegistryKeySecretName
   ##
   imagePullSecrets: []
-  storageClass: managed-nfs-storage
+  storageClass: cbs-sc
   redis:
     password: coloseo123
 
@@ -358,7 +358,7 @@ master:
     ## If set to "-", storageClassName: "", which disables dynamic provisioning
     ## If undefined (the default) or set to null, no storageClassName spec is set, choosing the default provisioner
     ##
-    storageClass: managed-nfs-storage
+    storageClass: cbs-sc
     ## @param master.persistence.accessModes [array] Persistent Volume access modes
     ##
     accessModes:
@@ -667,7 +667,7 @@ replica:
     ## If set to "-", storageClassName: "", which disables dynamic provisioning
     ## If undefined (the default) or set to null, no storageClassName spec is set, choosing the default provisioner
     ##
-    storageClass: managed-nfs-storage
+    storageClass: cbs-sc
     ## @param replica.persistence.accessModes [array] Persistent Volume access modes
     ##
     accessModes:
