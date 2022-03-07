@@ -15,7 +15,7 @@ global:
   ##   - myRegistryKeySecretName
   ##
   imagePullSecrets: []
-  storageClass: standard
+  storageClass: local-path
   redis:
     password: coloseo123
 
