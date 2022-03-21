@@ -7,7 +7,7 @@ on:
 
 jobs:
   apply:
-    name: Deploy auxo gateway
+    name: Deploy redis
     runs-on: Ubuntu-20.04
     steps:
       - name: Checkout
@@ -16,6 +16,6 @@ jobs:
       - name: Install redis
         uses: wahyd4/kubectl-helm-action@master
         env:
-          KUBE_CONFIG_DATA: ${{ secrets.TKE_CONFIG_DATA_CD }}
+          KUBE_CONFIG_DATA: ${{ secrets.TKE_CONFIG_DATA_NJ }}
         with:
           args: helm upgrade --install --namespace redis -f values-production.yaml redis ./redis
