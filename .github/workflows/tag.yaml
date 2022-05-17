@@ -16,6 +16,6 @@ jobs:
       - name: Install redis
         uses: wahyd4/kubectl-helm-action@master
         env:
-          KUBE_CONFIG_DATA: ${{ secrets.TKE_CONFIG_DATA_NJ }}
+          KUBE_CONFIG_DATA: ${{ secrets.TKE_CONFIG_DATA_CD }}
         with:
           args: helm upgrade --install --namespace redis -f values-production.yaml redis ./redis
